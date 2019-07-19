@@ -1,0 +1,8 @@
+<div class="login-box">
+  {{#login-validation
+    validate=(action 'userValidation')
+    as |result| }}
+    <p>{{result}}</p>
+  {{/login-validation}}
+</div>
+{{outlet}}
